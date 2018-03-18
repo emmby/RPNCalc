@@ -288,6 +288,13 @@ function onchar(c) {
   if (ok) {
     ustack = oldstack;
     draw();
+    
+    if (typeof(Storage) !== "undefined") {
+      // Code for localStorage/sessionStorage.
+      log("icanhaz storage")
+      localStorage.setItem("lastname", "Smith");
+    } 
+
   } else {
     stack = oldstack;
   }
