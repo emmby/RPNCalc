@@ -292,7 +292,8 @@ function onchar(c) {
     if (typeof(Storage) !== "undefined") {
       // Code for localStorage/sessionStorage.
       log("icanhaz storage")
-      localStorage.setItem("lastname", "Smith");
+      localStorage.setItem("stack", stack);
+      log(localStorage.getItem("stack");
     } 
 
   } else {
