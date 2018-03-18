@@ -293,7 +293,7 @@ function onchar(c) {
       // Code for localStorage/sessionStorage.
       log("icanhaz storage")
       localStorage.setItem("stack", stack);
-      log(localStorage.getItem("stack");
+      log("stack: " + localStorage.getItem("stack"));
     } 
 
   } else {
