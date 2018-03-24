@@ -76,6 +76,13 @@ function main() {
   } else {
     log("canvas is not supported!");
   }
+  
+  if (typeof(Storage) !== "undefined") {
+    // Code for localStorage/sessionStorage.
+    stack = localStorage.getItem("stack");
+    log("loading stack from storage: " + stack);
+  } 
+
 }
 
 function onkey(e) {
